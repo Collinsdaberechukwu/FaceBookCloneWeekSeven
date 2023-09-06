@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FaceBook Sign-Up</title>
+    <link rel="stylesheet" href="SignUp.css">
+</head>
+<body>
+<div class="Sign_up">
+      <form method="post" th:action="@{/SignUp}" th:object="${SignUpForm}">
+      <label>firstName : <input type="text" th:field="*{firstName}" name="firstName" required></label>
+      <label>lastName : <input type="email" th:field="*{text}" id="lastName" required></label>
+<!--      <label>Gender : <input type="" th:field="*{gender}" id="gender" required></label>-->
+      <label>Email : <input type="email" th:field="*{email}" id="email" required></label>
+      <label>Password : <input type="text" th:field="*{password}" id="password" required></label>
+
+          <select name="gender" class="user-input">
+              <option value="female">Female</option>
+              <option value="Male">Male</option>
+          </select>
+      </form>
+    </div>
+    <p>Already have an account? <a href="index.html"><h1 style="text-align: center">Login</h1></a></p>
+</div>
+</body>
+</html>
+
+<!--<h1>Register FaceBook</h1>-->
+<!--<div class="parent">-->
+<!--    <div class="writeupp">-->
+<!--        <h1 style="color: #3b5998">FaceBook App Clone</h1>-->
+<!--        <h3 style="color: #333333">Facebook helps you connect and share<br> with the people in your life.</h3>-->
+<!--    </div>-->
+<!--    <div class="bb">-->
+<!--        <form action="#" method="post">-->
+<!--            <label for="email">Email:</label>-->
+<!--            <input type="email" id="email" name="email" required>-->
+<!--            <label for="password">Password:</label>-->
+<!--            <input type="password" id="password" name="password" required>-->
+<!--            <label for="number">Phone Number:</label>-->
+<!--            <input type="number" id="number" name="number" required>-->
+<!--            <label for="numberage">Age:</label>-->
+<!--            <input type="number" id="numberage" name="numberage" required>-->
+<!--            <label for="country"> Country:</label>-->
+<!--            <input type="text" id="country" name="country" required>-->
+<!--            <button type="submit"><a href="index.html">Register</a>Register</button>-->
+<!--        </form>-->
+<!--    </div>-->
