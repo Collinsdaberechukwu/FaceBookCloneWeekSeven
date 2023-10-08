@@ -21,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 //@RequiredArgsConstructor
 @AllArgsConstructor
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/user")
 @Slf4j
